@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lisas & Hannes bröllopsdag</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="image-container">
+        <img src="Images/Engaged.jpg">
+    </div>
+    <div class="image-container-tilted">
+        <img src="Images/Engaged.jpg">
+    </div>
+    <div class="container">
+            <div class="content">
+                <p>Juni 8 2024</p>
+                <h1>VI <span>GIFTER</span> OSS</h1>
+                <div class="launch-time">
+                    <div>
+                        <p class="tjosan" id="days">00</p>
+                        <span>Dagar</span>
+                    </div>
+                    <div>
+                        <p class="tjosan" id="hours">00</p>
+                        <span>Timmar</span>
+                    </div>
+                    <div>
+                        <p class="tjosan" id="minutes">00</p>
+                        <span>Minuter</span>
+                    </div>
+                    <div>
+                        <p class="tjosan" id="seconds">00</p>
+                        <span>Sekunder</span>
+                    </div>
+                </div>
+            <div class="buttons-container">
+                <form action="info.html">
+                    <button type="submit" class="button">Mer info</button>
+                </form>
+                <a class="osa-button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScJmbEcWiSXXsfkrQquM2aMToN4homL-mtjdJIuBLlCoHW2-w/viewform?usp=sf_link">Osa här</a>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var countDownDate = new Date("June 8, 2024 13:00:00").getTime();
+    var x = setInterval(function(){
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        if(distance < 0){
+            clearInterval(x);
+            document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+        }
+
+    },1000);
+        
+
+</script>
+    
+</body>
+</html>

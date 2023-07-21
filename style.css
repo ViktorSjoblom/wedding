@@ -1,0 +1,122 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100%;
+    background-image: url(Images/sage.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 0 8% 8% 8%;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+    font-size : clamp(2rem, 10vw, 5rem);
+}
+.content button, .osa-button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    /* background-image: url(Images/black.png); */
+    background-color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.osa-button {
+    margin: 0px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-container-tilted {
+    position: absolute;
+    top: 5px;
+    padding-left: 200px;
+    transform: rotate(-10deg);
+}
+
+.image-container-tilted img {
+    width: 50%;
+}
+
+.image-container img {
+    padding-right: 15%;
+    padding-top: 5%;
+}
+.launch-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+.launch-time div {
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: clamp(24px, 10vw, 60px);
+    margin-bottom: -14px;
+    margin-right: 1em;
+}
+
+.launch-time div span{
+    font-size: clamp(12px, 5vw, 24px);
+}
+
+@media (max-width: 480px) {
+    body {
+        background-image: url(Images/sage.png);
+    }
+    .tjosan {
+        padding-bottom: 10px;
+    }
+
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url(Images/sage.png);
+    }
+}
+@media (min-width: 1025px) {
+    body {
+	    background-image: url(Images/sage.png);
+   }
+}
+
+@media (max-width: 1025px) {
+    body {
+	    background-image: url(Images/sage.png);
+   }
+       .image-container-tilted {
+        display: none;
+    }
+       .image-container {
+        display: none;
+    }
+}
