@@ -32,7 +32,6 @@
     outline: none;
     padding: 12px 25px;
     color: #fff;
-    /* background-image: url(Images/black.png); */
     background-color: black;
     cursor: pointer;
     font-size: 16px;
@@ -78,6 +77,7 @@
 }
 .launch-time div {
     flex-basis: 100px;
+    margin-right: 1.5em;
 }
 .launch-time div p{
     font-size: clamp(24px, 10vw, 60px);
@@ -93,7 +93,7 @@
     body {
         background-image: url(Images/sage.png);
     }
-    .tjosan {
+    .timer-text {
         padding-bottom: 10px;
     }
 
@@ -118,5 +118,9 @@
     }
        .image-container {
         display: none;
+    }
+
+    .launch-time div p{
+        margin-right: 0px;
     }
 }
