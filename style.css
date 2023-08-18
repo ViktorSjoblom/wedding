@@ -1,37 +1,128 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100vw;
     min-height: 100%;
-    background-image: url(Images/sage.png);
-    background-position: center center;
-    background-size: cover;
-    padding: 0 8% 8% 8%;
 }
-.content{
-    top: 50%;
-    position: absolute;
-    transform: translateY(-50%);
-    color: #fff;
 
+.content {
+    padding-top: 170px;
+    padding-left: 110px;
+    position: absolute;
+    top: 170px;
 }
-.content h1{
+
+.content, .content-info {
+    padding-top: 10%;
+    color: rgb(252 247 227);
+}
+
+.content-info {
+    background-color: rgb(156,175,136);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-info {
+    margin-top: 100px;
+    height: fit-content;
+    background-color: rgb(252 247 227);
+    color: rgb(63 90 69);
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.asdf {
+    padding-left: 150px;
+    padding-top: 60px;
+}
+
+.asdf p {
+    padding-bottom: 10px;
+}
+
+.big-text {
+    font-size: 60px;
+}
+
+.small-text {
+    font-size: 30px;
+}
+
+.toastmasters-info {
+    height: fit-content;
+    background-color: rgb(156,175,136);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toastmasters-info p {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: rgb(242 237 170);
+}
+
+.faq-info {
+    height: fit-content;
+    background-color: rgb(252,247,227);
+    color: black;
+    width: 100%;
+}
+
+.faq {
+    padding-left: 180px;
+    padding-bottom: 200px;
+}
+
+.faq-question {
+    background-color: rgb(63 90 69);
+    width: fit-content;
+    padding: 0.75rem;
+    display: flex;
+    border-radius: 0.25rem;
+    font-size: 20px;
+    color: rgb(252 247 227);
+    margin-bottom: 10px;
+}
+
+.wedding-gifts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.wedding-gifts p {
+    color: rgb(63 90 69);
+    padding-bottom: 50px;
+}
+
+.question {
+    color: rgb(242 237 170);
+    padding-right: 15px;
+}
+
+.content h1, .content-info h1{
     font-size: 64px;
     font-weight: 600;
     font-size : clamp(2rem, 10vw, 5rem);
 }
-.content button, .osa-button{
+
+.content button, .osa-button, .content-info button, .osa-button{
     background: transparent;
     border: 2px solid #fff;
     outline: none;
     padding: 12px 25px;
-    color: #fff;
+    color: rgb(252 247 227);
     background-color: black;
     cursor: pointer;
     font-size: 16px;
@@ -39,8 +130,8 @@
 
 .osa-button {
     margin: 0px;
-    margin-left: 10px;
     text-decoration: none;
+    margin-left: 10px;
 }
 
 .buttons-container {
@@ -52,6 +143,7 @@
 .image-container {
     display: flex;
     justify-content: flex-end;
+    background-color: rgb(156,175,136);
 }
 
 .image-container-tilted {
@@ -66,7 +158,6 @@
 }
 
 .launch-time div {
-    /* flex-basis: 100px; */
     margin-right: 1.5em;
 }
 
@@ -92,34 +183,76 @@
 }
 
 .text-background {
-    color: white;
+    color: rgb(252 247 227);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 @media (max-width: 480px) {
-    body {
-        background-image: url(Images/sage.png);
-    }
     .timer-text {
         padding-bottom: 10px;
     }
 
-}
-@media (min-width: 481px) and (max-width: 1024px) {
-    body {
-        background-image: url(Images/sage.png);
+    .content {
+        padding-top: 200px;
+        padding-left: 30px;
+        background-color: rgb(156,175,136);
+        top: 0px;
+        height: 100%;
+        overflow: hidden;
     }
-}
-@media (min-width: 1025px) {
-    body {
-	    background-image: url(Images/sage.png);
-   }
+
+    .text-background {
+        color: rgb(252 247 227);
+        text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
+    }
+
+    .content-info {
+        width: fit-content;
+    }
+
+    .big-text {
+        font-size: 40px;
+        overflow: hidden;
+    }
+    
+    .small-text {
+        font-size: 24px;
+    }
+    
+    .asdf {
+        padding-left: 0px;
+    }
+
+    .asdf img {
+        display: none;
+    }
+
+    .time-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .hehe {
+        width: 80%;
+    }
+
+    .faq {
+        padding-left: 0px;
+        padding-bottom: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lol {
+        margin-bottom: 60px;
+    }
+
 }
 
 @media (max-width: 1025px) {
-    body {
-	    background-image: url(Images/sage.png);
-   }
        .image-container-tilted {
         display: none;
     }
