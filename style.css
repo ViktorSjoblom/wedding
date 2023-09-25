@@ -83,6 +83,7 @@
     padding-bottom: 200px;
 }
 
+
 .faq-question {
     background-color: rgb(63 90 69);
     width: fit-content;
@@ -92,6 +93,18 @@
     font-size: 20px;
     color: rgb(252 247 227);
     margin-bottom: 10px;
+}
+
+.svg-button {
+    background: none;
+    background-color: transparent !important;
+    border: none !important;
+    cursor: pointer;
+    fill: #c0392b;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+
 }
 
 .wedding-gifts {
@@ -152,6 +165,7 @@
     padding-left: 200px;
     transform: rotate(-10deg);
 }
+
 
 .image-container-tilted img {
     width: 50%;
