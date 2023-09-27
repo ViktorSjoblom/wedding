@@ -101,10 +101,11 @@
     border: none !important;
     cursor: pointer;
     fill: #c0392b;
-    margin-left: 10px;
-    width: 24px;
-    height: 24px;
-
+    margin-left: 2px;
+    margin-right: auto;
+    width: 10px;
+    margin-top: -12px;
+    height: 24px; 
 }
 
 .wedding-gifts {
