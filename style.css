@@ -108,6 +108,12 @@
     height: 24px; 
 }
 
+
+.svg-button-jump {
+    animation: jump 0.5s ease-in-out infinite; 
+
+}
+
 .wedding-gifts {
     display: flex;
     flex-direction: column;
@@ -279,3 +285,11 @@
         margin-right: 0px;
     }
 }
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0); /* Start and end position */
+    }
+    50% {
+        transform: translateY(-5px); /* Middle position, slightly up */
+    }
