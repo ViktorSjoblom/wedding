@@ -101,10 +101,10 @@
     border: none !important;
     cursor: pointer;
     fill: #c0392b;
-    margin-left: 2px;
-    margin-right: auto;
+    margin-left: -7px;
+    margin-right: -5px;
     width: 10px;
-    margin-top: -12px;
+    margin-top: -15px;
     height: 24px; 
 }
 
