@@ -117,10 +117,15 @@
     height: 24px; 
 }
 
-
 .svg-button-jump {
-    animation: jump 0.5s ease-in-out infinite; 
+    position: relative;
+    display: inline-block;
+    animation: jump 1s infinite alternate;
+}
 
+.svg-button-jump svg {
+    position: relative;
+    z-index: 1;
 }
 
 .wedding-gifts {
@@ -152,7 +157,6 @@
     outline: none;
     padding: 12px 25px;
     color: rgb(252 247 227);
-    background-color: black;
     cursor: pointer;
     font-size: 16px;
 }
@@ -242,7 +246,6 @@
 
     .big-text {
         font-size: 36px;
-        overflow: hidden;
     }
     
     .small-text {
@@ -295,10 +298,12 @@
     }
 }
 
+
 @keyframes jump {
+
     0%, 100% {
-        transform: translateY(0); /* Start and end position */
+        transform: translateY(0); 
     }
     50% {
-        transform: translateY(-5px); /* Middle position, slightly up */
+        transform: translateY(-5px); 
     }
