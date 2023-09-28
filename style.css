@@ -48,6 +48,15 @@
     padding-bottom: 10px;
 }
 
+.faq-image {
+    display: flex;
+    height: 420px;
+    width: 250px;
+    float: right;
+    margin-right: 350px;
+    margin-top: 45px;
+  }
+
 .big-text {
     font-size: 60px;
 }
