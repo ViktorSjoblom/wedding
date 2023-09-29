@@ -77,7 +77,7 @@
 .toastmasters-info p {
     padding-top: 60px;
     padding-bottom: 40px;
-    color: rgb(242 237 170);
+    color: rgb(240, 240, 234);
 }
 
 .faq-info {
@@ -114,7 +114,8 @@
     margin-right: -5px;
     width: 10px;
     margin-top: -15px;
-    height: 24px; 
+    height: 24px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.7));
 }
 
 .svg-button-jump {
@@ -127,6 +128,7 @@
     position: relative;
     z-index: 1;
 }
+
 
 .wedding-gifts {
     display: flex;
