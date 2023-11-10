@@ -188,6 +188,25 @@
     transform: rotate(-10deg);
 }
 
+#additional-section {
+    background-color: rgb(156, 175, 136);
+    color: rgb(252, 247, 227);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#additional-section .big-text {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: rgb(240, 240, 234);
+}
+
+#additional-section .additional-content {
+    width: 65%;
+    /* Add additional styles for the content of the additional section here */
+}
 
 .image-container-tilted img {
     width: 50%;
